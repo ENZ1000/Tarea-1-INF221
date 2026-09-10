@@ -1,0 +1,8 @@
+Las pruebas experimentales se realizaron en un equipo local bajo el sistema operativo \textbf{Microsoft Windows 11 (64-bit)}. En cuanto al hardware, el equipo cuenta con un procesador \textbf{AMD Ryzen 7 7435HS}, \textbf{24~GB de memoria RAM DDR4} y una unidad de almacenamiento de \textbf{512~GB SSD}. Todo el código fuente en C++ se compiló mediante \textbf{MinGW-w64 GCC (g++)} bajo el estándar C++17, utilizando la bandera de optimización máxima \texttt{-O3} y soporte de hilos \texttt{-pthread}. Los scripts auxiliares para generar datos y graficar se ejecutaron en \textbf{Python 3.14} apoyados en las bibliotecas \texttt{NumPy}, \texttt{Pandas} y \texttt{Matplotlib}.
+
+\paragraph{Datasets evaluados:}
+\begin{itemize}[leftmargin=1.5em, itemsep=1pt]
+    \item \textbf{Ordenamiento:} Arreglos de tamaño $N \in \{10, 10^3, 10^5, 10^7\}$ con tres disposiciones iniciales (\textit{ascendente}, \textit{descendente} y \textit{aleatorio}) y dos dominios: $D_1 = [0, 9]$ y $D_7 = [0, 10^7]$.
+    \item \textbf{Multiplicación de matrices:} Matrices cuadradas con dimensión $N \in \{16, 64, 256, 1024\}$, en variantes \textit{dispersa}, \textit{diagonal} y \textit{densa}, bajo dominios $D_0 = \{0, 1\}$ y $D_{10} = \{0, \dots, 9\}$.
+    \item \textbf{Replicabilidad estadística:} Para cada caso se ejecutaron tres muestras independientes ($a, b, c$), considerando el promedio aritmético de sus tiempos para evitar distorsiones por procesos del sistema.
+\end{itemize}

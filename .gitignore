@@ -1,0 +1,17 @@
+# Ejecutables
+*.exe
+*.o
+
+# Datos voluminosos reproducibles
+code/**/data/*_input/*.txt
+code/**/data/*_output/*.txt
+
+# Temporales de LaTeX
+report/*.aux
+report/*.bbl
+report/*.bcf
+report/*.blg
+report/*.log
+report/*.out
+report/*.run.xml
+report/*.synctex.gz
